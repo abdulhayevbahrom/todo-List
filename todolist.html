@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="todolist__wrapper">
+            <div class="task__adder">
+                <form action="#" id="task__form" class="task__form">
+                    <input autofocus  id="task__input" class="task__input" type="text" placeholder="Your task" minlength="3" >
+                    <button id="task__button" class="task__button">Add Task</button>
+                </form>
+                <div class="task__operations">
+                    <button class="task__deleteAll" id="delete__all">Delete All</button>
+                    <select id="task__select">
+                        <option value="alphabet">A-Z</option>
+                        <option value="date">DATE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="task__search">
+                <input type="text" placeholder="Search task" class="task__searchInput">
+            </div>
+            <ul id="task__wrapper" class="task__wrapper"></ul>
+
+        </div>
+    </div>
+    <div class="task__alert" id="task__alert">
+            <i class="fas fa-question-circle"></i>
+            <p>Are you sure? I think you know what you are doing?</p>
+            <div class="task__alertBtns">
+                <button class="task__yes">Yes</button>
+                <button class="task__no">No</button>
+            </div>
+    </div>
+    <script src="./todolist.js"></script>
+</body>
+</html>
